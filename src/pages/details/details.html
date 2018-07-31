@@ -1,0 +1,22 @@
+<!--
+  Generated template for the DetailsPage page.
+
+  See http://ionicframework.com/docs/components/#navigation for more info on
+  Ionic pages and navigation.
+-->
+<ion-header>
+
+  <ion-navbar>
+    <ion-title>{{viaje.name}}</ion-title>
+  </ion-navbar>
+
+</ion-header>
+
+
+<ion-content padding>
+  Salida: {{viaje.departureDate.toDate().toLocaleDateString()}}<br/>
+  Regreso: {{viaje.returnDate.toDate().toLocaleDateString()}}
+  <p>{{viaje.details}}</p>
+  Bus último registro: {{viaje.lastEntry.toDate().toLocaleString()}}
+  <div id="map"></div>
+</ion-content>
