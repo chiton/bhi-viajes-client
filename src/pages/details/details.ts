@@ -9,7 +9,6 @@ import * as firebase from 'firebase';
 import 'firebase/firestore';
 import { MapProvider } from '../../providers/map/map';
 import { DataProvider } from '../../providers/data/data';
-import { EditorPage } from '../editor/editor';
 import { AdMobFree, AdMobFreeBannerConfig } from '@ionic-native/admob-free';
 
 @IonicPage()

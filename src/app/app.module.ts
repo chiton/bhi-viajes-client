@@ -12,7 +12,6 @@ import { MyApp } from './app.component';
 import { AboutPage } from '../pages/about/about';
 import { ContactPage } from '../pages/contact/contact';
 import { DetailsPage } from '../pages/details/details';
-import { EditorPage } from '../pages/editor/editor';
 import { HomePage } from '../pages/home/home';
 import { TabsPage } from '../pages/tabs/tabs';
 
@@ -33,7 +32,6 @@ import { AdMobFree } from '@ionic-native/admob-free';
     DetailsPage,
     HomePage,
     TabsPage,
-    EditorPage,
     ViajesFilterPipe
   ],
   imports: [
@@ -51,8 +49,7 @@ import { AdMobFree } from '@ionic-native/admob-free';
     ContactPage,
     DetailsPage,
     HomePage,
-    TabsPage,
-    EditorPage
+    TabsPage
   ],
   providers: [
     StatusBar,

@@ -5,8 +5,6 @@ import { DetailsPage } from '../details/details';
 import { AngularFirestore } from 'angularfire2/firestore';
 import { Observable } from 'rxjs';
 import { DataProvider } from '../../providers/data/data';
-import { EditorPage } from '../editor/editor';
-
 
 @Component({
   selector: 'page-home',
@@ -28,9 +26,5 @@ export class HomePage {
   {
     this.navCtrl.push(DetailsPage, {
       viaje: viaje});
-  }
-
-  private addViaje() {
-      this.navCtrl.push(EditorPage);
   }
 }
