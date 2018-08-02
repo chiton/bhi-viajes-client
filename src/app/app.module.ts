@@ -23,6 +23,7 @@ import { MapProvider } from '../providers/map/map';
 
 import { ViajesFilterPipe } from '../pipes/viajes-filter/viajes-filter';
 import { AdMobFree } from '@ionic-native/admob-free';
+import { AdsProvider } from '../providers/ads/ads';
 
 @NgModule({
   declarations: [
@@ -59,7 +60,8 @@ import { AdMobFree } from '@ionic-native/admob-free';
     {provide: ErrorHandler, useClass: IonicErrorHandler},
     DataProvider,
     MapProvider,
-    AdMobFree
+    AdMobFree,
+    AdsProvider
   ]
 })
 export class AppModule {}
