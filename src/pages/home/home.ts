@@ -1,8 +1,7 @@
 import { Component } from '@angular/core';
-import { NavController, AlertController } from 'ionic-angular';
+import { NavController } from 'ionic-angular';
 import { Viaje } from '../../models/viaje';
 import { DetailsPage } from '../details/details';
-import { AngularFirestore } from 'angularfire2/firestore';
 import { Observable } from 'rxjs';
 import { DataProvider } from '../../providers/data/data';
 

@@ -1,12 +1,9 @@
 import { Component } from '@angular/core';
-import { IonicPage, NavController, NavParams, AlertController } from 'ionic-angular';
+import { IonicPage, NavController, NavParams } from 'ionic-angular';
 import { Viaje } from '../../models/viaje';
 
 // We MUST import both the firebase AND firestore modules like so
-import * as firebase from 'firebase';
-import 'firebase/firestore';
 import { MapProvider } from '../../providers/map/map';
-import { DataProvider } from '../../providers/data/data';
 import { AdMobFree, AdMobFreeBannerConfig } from '@ionic-native/admob-free';
 
 @IonicPage()
@@ -21,7 +18,6 @@ export class DetailsPage {
   constructor(public navCtrl: NavController, 
     private navParams: NavParams,
     private mapProvider: MapProvider,
-    private dataProvider: DataProvider,
     private admob: AdMobFree) {
     this.viaje = this.navParams.get('viaje');
   }
