@@ -21,11 +21,11 @@ export class HomePage {
 
   ionViewDidLoad() {
     this.viajes = this.dataProvider.getViajes();
+    this.adsProvider.showInterstitial();
   }
 
   private selectViaje(viaje : Viaje)
   {
-    this.adsProvider.showInterstitial();
     this.navCtrl.push(DetailsPage, {
       viaje: viaje});
   }
