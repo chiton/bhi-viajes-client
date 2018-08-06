@@ -14,9 +14,9 @@
 
 
 <ion-content padding>
-  Salida: {{viaje.departureDate.toDate().toLocaleDateString()}}<br/>
-  Regreso: {{viaje.returnDate.toDate().toLocaleDateString()}}
+  <strong>Salida:</strong> {{viaje.departureDate.toDate().toLocaleDateString()}}<br/>
+  <strong>Regreso:</strong> {{viaje.returnDate.toDate().toLocaleDateString()}}
   <p>{{viaje.details}}</p>
-  Bus último registro: {{viaje.lastEntry.toDate().toLocaleString()}}
+  <strong>Bus último registro:</strong> {{viaje.lastEntry.toDate().toLocaleString()}}
   <div id="map"></div>
 </ion-content>

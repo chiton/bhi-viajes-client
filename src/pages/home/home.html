@@ -16,8 +16,8 @@
         {{viaje.name}}
      </ion-card-title>
      <p>
-       Salida: {{viaje.departureDate.toDate().toLocaleDateString()}} <br/>
-       Regreso: {{viaje.returnDate.toDate().toLocaleDateString()}} <br />
+       <strong>Salida:</strong> {{viaje.departureDate.toDate().toLocaleDateString()}} <br/>
+       <strong>Regreso:</strong> {{viaje.returnDate.toDate().toLocaleDateString()}} <br />
      </p>
      <button ion-button outline item-end icon-start (click)="selectViaje(viaje)">
         <ion-icon name="bus"></ion-icon>
