@@ -4,7 +4,6 @@ import { Viaje } from '../../models/viaje';
 import { DetailsPage } from '../details/details';
 import { Observable } from 'rxjs';
 import { DataProvider } from '../../providers/data/data';
-import { AdsProvider } from "../../providers/ads/ads";
 
 @Component({
   selector: 'page-home',
@@ -15,13 +14,11 @@ export class HomePage {
     private searchTerm : string = "";
     
   constructor(private navCtrl: NavController, 
-    private dataProvider: DataProvider,
-    private adsProvider: AdsProvider) {
+    private dataProvider: DataProvider) {
   }
 
   ionViewDidLoad() {
     this.viajes = this.dataProvider.getViajes();
-    this.adsProvider.showInterstitial();
   }
 
   private selectViaje(viaje : Viaje)

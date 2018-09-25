@@ -4,15 +4,15 @@ import { AdMobFree, AdMobFreeBannerConfig, AdMobFreeInterstitialConfig} from '@i
 @Injectable()
 export class AdsProvider {
   private bannerConfig : AdMobFreeBannerConfig = {
-          isTesting: true, // Remove in production
-          autoShow: true
-          //id: Your Ad Unit ID goes here
+          isTesting: false, // Remove in production
+          autoShow: true,
+          id: "ca-app-pub-6893674503689163/5130073760"
       };
   
   private interstitialConfig  : AdMobFreeInterstitialConfig  = {
-          isTesting: true, // Remove in production
-          autoShow: true
-          //id: Your Ad Unit ID goes here
+          isTesting: false, // Remove in production
+          autoShow: true,
+          id: "ca-app-pub-6893674503689163/9441488329"
       };
   
 
@@ -29,7 +29,7 @@ export class AdsProvider {
 
   public showInterstitial() {
     this.admob.interstitial.prepare().then(() => {
-          // success
-      }).catch(e => console.log(e));
+        // success
+    }).catch(e => console.log(e));
   }
 }

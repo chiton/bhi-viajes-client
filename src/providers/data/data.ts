@@ -22,6 +22,7 @@ export class DataProvider {
   }
 
   public getViajes() : Observable<any[]> {
+    
      return this.getViajesWithIds(); 
   }
 
