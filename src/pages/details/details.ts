@@ -6,7 +6,6 @@ import { Viaje } from '../../models/viaje';
 import { MapProvider } from '../../providers/map/map';
 import { AdsProvider } from "../../providers/ads/ads";
 
-@IonicPage()
 @Component({
   selector: 'page-details',
   templateUrl: 'details.html',
@@ -24,6 +23,6 @@ export class DetailsPage {
 
   ionViewDidLoad() {
     this.mapProvider.loadMap(this.viaje.coord.latitude, this.viaje.coord.longitude);
-    this.adsProvider.showInterstitial();
+    //this.adsProvider.showBanner();
   }
 }

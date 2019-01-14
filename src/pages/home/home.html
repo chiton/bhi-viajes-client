@@ -6,17 +6,21 @@
 
 <ion-content padding>
   <h2>BHI Viajes</h2>
-  
+  <p *ngIf="this.trivia != undefined">
+    <a href="#" (click)="showTrivia()">Respondé</a> la trivia y participá de valiosos premios!
+  </p>
+
   <ion-searchbar [(ngModel)]="searchTerm"></ion-searchbar>
 
  <ion-card *ngFor="let viaje of viajes | async | viajesFilter : searchTerm" (click)="selectViaje(viaje)">
    <img src="{{viaje.image}}" />
    <div class="price">{{viaje.price}}</div>
+   <div class="en-curso" *ngIf="displayEnCuro(viaje)">EN CURSO</div>
    <ion-card-content>
      <ion-card-title>
         {{viaje.name}}
      </ion-card-title>
-     <p>{{viaje.summary}} del {{viaje.departureDate.toDate().toLocaleDateString()}} al {{viaje.returnDate.toDate().toLocaleDateString()}}</p>
+     <p>{{viaje.summary}}<br/>Salida:  {{viaje.departureDate.toDate().toLocaleDateString()}}</p>
    </ion-card-content>
     
  </ion-card>

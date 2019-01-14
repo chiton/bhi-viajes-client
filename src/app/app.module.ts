@@ -24,6 +24,8 @@ import { MapProvider } from '../providers/map/map';
 import { ViajesFilterPipe } from '../pipes/viajes-filter/viajes-filter';
 import { AdMobFree } from '@ionic-native/admob-free';
 import { AdsProvider } from '../providers/ads/ads';
+import { TriviaPage } from '../pages/trivia/trivia';
+import { DateProvider } from '../providers/date/date';
 
 @NgModule({
   declarations: [
@@ -33,6 +35,7 @@ import { AdsProvider } from '../providers/ads/ads';
     DetailsPage,
     HomePage,
     TabsPage,
+    TriviaPage,
     ViajesFilterPipe
   ],
   imports: [
@@ -50,6 +53,7 @@ import { AdsProvider } from '../providers/ads/ads';
     ContactPage,
     DetailsPage,
     HomePage,
+    TriviaPage,
     TabsPage
   ],
   providers: [
@@ -61,7 +65,8 @@ import { AdsProvider } from '../providers/ads/ads';
     DataProvider,
     MapProvider,
     AdMobFree,
-    AdsProvider
+    AdsProvider,
+    DateProvider
   ]
 })
 export class AppModule {}
